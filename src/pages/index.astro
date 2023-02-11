@@ -1,18 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-//microCMS呼び出し
-import { getBlogs } from "../lib/microcms";
-const response = await getBlogs({ fields: ["id", "title"] });
+import "../css/base.css";
+
+import { Blog, getBlogs } from "../lib/microcms";
+import Title from "../components/Title.astro";
+const response = await getBlogs({ fields: ["id", "title", "eyecatch", "category", "publishedAt"] });
+
 ---
 
 <Layout title="My first blog with Astro">
   <main>
+    <Title />
     <ul>
       {
-        response.contents.map((content: any) => (
-          <li>
-            <a href={content.id}>{content.title}</a>
+        response.contents.map((content: Blog) => (
+          <li class="flex items-center gap-4">
+            <img class="object-scale-down h-36 w-36" src={content.eyecatch.url} width={content.eyecatch.width} height={content.eyecatch.height} alt="eyecatch"/>
+            <div class="flex flex-col items-start">
+              <a href={content.id} class="text-xl">{content.title}</a>
+            <p class="rounded-2xl px-3 py-1 bg-blue-200">{content.category.name}</p></div>
           </li>
         ))
       }
