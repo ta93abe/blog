@@ -1,6 +1,6 @@
 import { Post } from "contentlayer/generated";
-import * as styles from "./PostCard.css";
 import Link from "next/link";
+import * as styles from "./PostCard.css";
 
 export function PostCard(post: Post) {
 	return (

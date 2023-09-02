@@ -1,7 +1,7 @@
 import { allPosts } from "contentlayer/generated";
-import Link from "next/link";
-import parse from "html-react-parser";
 import { format, parseISO } from "date-fns";
+import parse from "html-react-parser";
+import Link from "next/link";
 import * as styles from "./page.css";
 
 export const generateMetadata = ({ params }: { params: { slug: string } }) => {
