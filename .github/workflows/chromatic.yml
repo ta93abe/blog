@@ -1,5 +1,9 @@
 name: 'Chromatic'
-on: push
+on:
+  push:
+    paths:
+      - 'src/components/**'
+
 jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
