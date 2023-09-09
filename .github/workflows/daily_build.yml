@@ -1,0 +1,16 @@
+name: Daily Build
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  build:
+    name: Request Cloudflare Pages Webhook
+    runs-on: ubuntu-latest
+    steps:
+      - name: POST to Deploy Hook
+        env:
+          BUILD_HOOK: ${{ secrets.CLOUDFLARE_BUILD_HOOK }}
+        run: curl -X POST $BUILD_HOOK
