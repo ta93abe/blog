@@ -26,7 +26,7 @@ export default function PostView({ params }: { params: { slug: string } }) {
 				</div>
 			)}
 			<div>{parse(post.body.html)}</div>
-			<Link href="/">Back to home</Link>
+			<Link href="/"> {"< "} Back to home</Link>
 		</div>
 	);
 }

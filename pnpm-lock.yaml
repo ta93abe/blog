@@ -20,9 +20,6 @@ dependencies:
   '@vanilla-extract/css':
     specifier: ^1.13.0
     version: 1.13.0
-  cdate:
-    specifier: ^0.0.7
-    version: 0.0.7
   contentlayer:
     specifier: 0.3.2
     version: 0.3.2(esbuild@0.18.20)
@@ -6222,10 +6219,6 @@ packages:
 
   /ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
-    dev: false
-
-  /cdate@0.0.7:
-    resolution: {integrity: sha512-11EnUjVX6hwL0FcDNE2F0wh+0KnQieTfPUdPHNdQHbrvFdEbqfRULkA8nMcfT2tXCGw/ABRdYLqQ0SmbeWawTA==}
     dev: false
 
   /chalk@2.4.2:
