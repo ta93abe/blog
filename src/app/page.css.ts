@@ -6,5 +6,6 @@ export const container = style({
 	justifyContent: "center",
 	marginInline: "auto",
 	maxWidth: "800px",
+	padding: "16px",
 	gap: "24px",
 });

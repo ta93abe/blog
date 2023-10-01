@@ -8,6 +8,7 @@ export const container = style({
 	color: vars.color.primary,
 	maxWidth: "800px",
 	gap: "24px",
+	padding: "16px",
 });
 
 export const date = style({
