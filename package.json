@@ -12,8 +12,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
-		"check": "biome check --apply src",
+		"lint": "biome lint --apply-unsafe src",
 		"format": "biome format --write src",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"

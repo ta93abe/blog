@@ -12,5 +12,5 @@ export const container = style({
 });
 
 export const date = style({
-  opacity: 0.5,
+	opacity: 0.5,
 });
