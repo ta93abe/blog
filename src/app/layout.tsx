@@ -2,7 +2,8 @@ import "@/styles/base.css";
 import "@/styles/reset.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./layout.css";
+import { Title } from "@/components/Title";
+import { styles } from "./layout.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,10 @@ type Props = {
 export default function RootLayout({ children }: Props) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>{children}</body>
+			<body className={`${inter.className} ${styles.container}`}>
+			<Title />
+			{children}
+			</body>
 		</html>
 	);
 }

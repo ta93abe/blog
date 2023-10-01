@@ -13,6 +13,7 @@ globalStyle("body", {
 	lineHeight: "1.8",
 	minHeight: "100dvh",
 	color: vars.color.text,
+	backgroundColor: vars.color.secondary,
 });
 
 globalStyle("a", {

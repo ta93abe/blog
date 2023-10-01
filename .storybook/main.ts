@@ -25,8 +25,11 @@ const config: StorybookConfig = {
 
 		config.module?.rules?.forEach((rule) => {
 			if (
+				rule &&
 				typeof rule !== "string" &&
+				"test" in rule &&
 				rule.test instanceof RegExp &&
+				typeof rule.exclude === "undefined" &&
 				rule.test.test(".css")
 			) {
 				rule.exclude = /\.vanilla\.css$/i;

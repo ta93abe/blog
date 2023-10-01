@@ -2,8 +2,8 @@ import { createGlobalTheme } from "@vanilla-extract/css";
 
 export const vars = createGlobalTheme(":root", {
 	color: {
-		primary: "#3f3f9d",
-		secondary: "#4a4e5a",
+		primary: "#ffffff",
+		secondary: "#333333",
 		text: "#30345f",
 	},
 	spacing: {
